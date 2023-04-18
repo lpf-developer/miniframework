@@ -1,24 +1,33 @@
 # Mini Framework PHP
 
-Esta aplicação trata-se de um miniframework PHP. Framework é um conjunto de 
+Esta aplicação trata-se de um miniframework PHP. Um Framework é um conjunto de 
 classes destinadas a um propósito específico.
 
-Este framework é composto pela seguinte árvore de diretórios
+## Árvore de diretórios
 
-App
-| ---- Controllers
-| ---- MF
-| ---- Models
-| ---- Views
-Routes.php
-
-Public
-|
-index.php
-
-Readme.md
-.gitignore
-
+    .
+    ├── App
+    |    ├── Controllers
+    |    │   ├── indexController.php
+    |    │   ├── arquivo2.txt
+    |    │   └── arquivo3.txt
+    |    ├── MF
+    |    │   ├── arquivo4.txt
+    |    │   └── arquivo5.txt
+    |    ├── Models
+    |    |   ├── arquivo6.txt
+    |    |   └── arquivo7.txt
+    |    └── Views
+    |        ├── arquivo6.txt
+    |        └── arquivo7.txt
+    |
+    ├──  Public
+    |    ├── .htaccess
+    |    └── index.php
+    |
+    ├── .gitignore
+    ├── composer.json
+    └── Readme.md
 ## O arquivo composer.json
 
 ```json
