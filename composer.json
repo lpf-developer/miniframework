@@ -1,7 +1,8 @@
 {
-	"name": "miniframework",
+	"name": "lpf-developer/miniframework",
 	"require": {
-		"php": ">= 7.0"
+		"php": ">= 7.0",
+		"symfony/var-dumper": "^6.2"
 	},
 	"authors": [
 		{
