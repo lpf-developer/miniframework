@@ -2,6 +2,7 @@
 
 Esta aplicação trata-se de um miniframework PHP. Um Framework é um conjunto de 
 classes destinadas a um propósito específico.  
+
 O diretório `vendor` foi incluído no arquivo `.gitignore`, ou seja, ele não foi 
 versionado. Este diretório guarda as informações das dependências adcionadas a
 partir do gerenciador de dependências `composer`, dependências estas necessárias
@@ -10,6 +11,9 @@ será necessário digitar, dentro do diretório da aplicação, o seguinte coman
 
 > composer update
 
+O diretório App/MF receberá as classes que não fazem parte das regras de negócio
+das aplicações desenvolvidas a partir do miniframework. Assim, separamos os 
+requisitos funcionais dos não funcionais da aplicação.
 
 ## Árvore de diretórios
 
@@ -20,14 +24,18 @@ será necessário digitar, dentro do diretório da aplicação, o seguinte coman
     |    │   ├── arquivo2.txt
     |    │   └── arquivo3.txt
     |    ├── MF
-    |    │   └── init
-    |    |       └── Bootstrap.php
+    |    │   ├── init
+    |    |   |    └── Bootstrap.php
+    |    |   └── controller
+    |    |       └── Action.php
     |    ├── Models
     |    |   ├── arquivo6.txt
     |    |   └── arquivo7.txt
     |    └── Views
-    |        ├── arquivo6.txt
-    |        └── arquivo7.txt
+    |        ├── index
+    |        |   ├── indexView.phtml
+    |        |   └── sobreNosView.phtml
+    |        └── layout1.phtml
     ├──  Public
     |    ├── .htaccess
     |    └── index.php
